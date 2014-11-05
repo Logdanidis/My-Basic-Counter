@@ -8,7 +8,7 @@ import javax.faces.bean.ViewScoped;
 @ViewScoped
 public class BasicView implements Serializable{
      
-    /**
+    /**Dokimastiko script gia ekp.
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
