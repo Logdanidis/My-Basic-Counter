@@ -9,11 +9,12 @@
 	<h:head />
 	<h:body>
 		<h:form>
+		<p:growl id="growl" showDetail="true" sticky="true" />
 			<h:panelGrid columns="4" cellpadding="5">
 				<h:outputLabel for="name" value="Name:" style="font-weight:bold" />
-				<p:inputText id="name" value="#{basicView.text}" />
+				<p:inputText id="name" value="#{basicView.text}" required="true" />
 				<p:commandButton value="Submit"
-					actionListener="#{basicView.increment}" update="display, output"
+					actionListener="#{basicView.increment}" update="display, output, growl"
 					icon="ui-icon-check" />
 				<h:outputText id="display" value="#{basicView.text}" />
 
