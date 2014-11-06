@@ -30,6 +30,7 @@ public class BasicView implements Serializable{
  
     public void increment() {
         number++;
+        
         saveMessage();
 	/** kalei tin saveMessage gia na doulepsei to growl */
     }
